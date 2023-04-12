@@ -156,6 +156,7 @@ img {
     color: #404bbf;
 }
 
+
 .header-adress {
     font-style: normal;
 }
@@ -179,6 +180,7 @@ img {
 }
 .current{
     position: relative;
+    color: #404bbf;
 }
 .current::after {
     content: '';
@@ -188,7 +190,8 @@ img {
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background: #404BBF;
+    background-color: #404BBF;
+
 }
 
 /*-------------Hero--------------*/
