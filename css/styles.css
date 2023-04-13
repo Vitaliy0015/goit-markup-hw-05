@@ -168,7 +168,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    transition: color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts:hover {
@@ -436,7 +436,6 @@ img {
 
 .client-soc-icon {
     fill: #8E8F99;
-    margin: 16px 32px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-soc-link:hover{
@@ -661,7 +660,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
@@ -690,7 +689,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 24px;
 }
 .backdrop.is-hidden .modal {
@@ -700,13 +699,22 @@ img {
 .modal-close-btn {
     width: 24px;
     height: 24px;
-    background: #E7E9FC;
+    background-color: #E7E9FC;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover{
+    background-color: var(--color-ocean);
+    fill: #FFFFFF;
+}
+.modal-close-btn:focus{
+    background-color: var(--color-ocean);
+    fill: #FFFFFF;
 }
 
 .is-hidden {
